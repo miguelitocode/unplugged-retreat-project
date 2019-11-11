@@ -237,6 +237,8 @@ textarea {
    /* Hero Area */
 
    .hero-area {
+     background: url('../img/hero-background.jpg') center no-repeat #333;
+     background-size: cover;
      display: flex;
      justify-content: center;
      flex-flow: row wrap;
@@ -283,6 +285,8 @@ input[type=button] {
    /* Features */
 
    .features {
+     background: url('../img/features-background.jpg') center no-repeat #333;
+     background-size: cover;
      display: flex;
      justify-content: center;
      flex-flow: row wrap;
@@ -675,7 +679,7 @@ input[type=button] {
      .contact-section .content-wrapper h2 {
          width: 100%;
      }
-     
+
      .mission p{
        font-size: 1.1em;
      }
