@@ -104,6 +104,7 @@ textarea {
    }
 
    body {
+     color: #e2e3ed;
      font-size: 1em;
      font-family: 'Open Sans', sans-serif;
      text-align: left;
@@ -112,20 +113,16 @@ textarea {
    ul,
    ol {
      list-style-type: none;
+     padding:0;
    }
 
    a {
      color: #e2e3ed;
      text-decoration: none;
    }
-   h1{
-     color: #e2e3ed;
-     font-family: 'poppins', sans-serif;
-     font-weight: 500;
-   }
+
 
    h2 {
-     color: #e2e3ed;
      font-family: 'Poppins', sans-serif;
      font-size: 1.8em;
      font-weight: 500;
@@ -133,7 +130,6 @@ textarea {
 
    h3,
    h4 {
-     color: #e2e3ed;
      font-family: 'Poppins', sans-serif;
      margin: 20px 0;
      font-size: 1.125em;
@@ -141,8 +137,6 @@ textarea {
    }
 
    p {
-     color: #e2e3ed;
-     font-family: 'open-Sans', sans-serif;
      font-size: .875em;
      line-height: 1.285;
    }
@@ -153,10 +147,15 @@ textarea {
 
    .content-wrapper {
      width: 90%;
-     margin: 50px 0;
+     margin: 20px 0;
    }
+   img{
+     width: 100%;
 
-
+   }
+   figure{
+     margin: 0;
+   }
    /* -------------------- Base Header - Footer Styles -------------------- */
 
    header,
@@ -172,7 +171,6 @@ textarea {
    header {
      padding: 15px 0;
    }
-
    header .content-wrapper {
      margin: 0;
      display: flex;
@@ -180,19 +178,30 @@ textarea {
      align-items: center;
      flex-flow: row wrap;
    }
+   header figure {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+}
 
    .header-divider {
+     color: gray;
      width: 100%;
      height: 1px;
-     margin: 10px 0 20px 0;
+     margin: 0;
    }
 
    header nav {
-     display: flex;
-     justify-content: space-around;
-     align-items: center;
-     flex-flow: row wrap;
-     width: 60%;
+    font-size: 1.125em;
+    font-weight: 700;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+    width: 100%;
    }
 
    header nav ul {
@@ -211,7 +220,7 @@ textarea {
 
    footer .content-wrapper {
      width: 55%;
-     margin: 50px 0 0 0;
+     margin: 55px 0 0 0;
     text-align: center;
    }
    footer .social-icons {
@@ -239,9 +248,15 @@ textarea {
    .hero-area {
      background: url('../img/hero-background.jpg') center no-repeat #333;
      background-size: cover;
+     background-position: center;
+     min-height: 500px;
      display: flex;
+     align-items: flex-start;
      justify-content: center;
      flex-flow: row wrap;
+   }
+   .hero-area h1 {
+     font-size: 2.25em;
    }
 
    /* Aside */
@@ -314,7 +329,6 @@ input[type=button] {
    }
 
    /* Reviews */
-
    .reviews{
      background-color: #2a423a;
      display:flex;
@@ -329,6 +343,7 @@ input[type=button] {
      width: 55%;
      margin: 20px 0;
    }
+
    /* Footer */
    footer .footer-content{
      padding: 0 0 50px 0;
@@ -481,14 +496,16 @@ input[type=button] {
      /* General styles */
      .content-wrapper {
        max-width: 640px;
-       margin: 100px 0;
+       margin: 50px 0;
      }
 
      /* Header */
      header {
        justify-content: space-around;
      }
-
+     header figure {
+      width: 30%;
+     }
      header .content-wrapper {
        width: 100%;
        justify-content: space-between;
@@ -550,10 +567,24 @@ input[type=button] {
 
      /* Reviews */
 
-
      .reviews article {
        display: flex;
        justify-content: space-between;
+     }
+
+     .reviews h2 {
+       width: 90%;
+     }
+
+     .reviews article figure,
+     .reviews article div {
+       width: 49%;
+     }
+
+     .reviews h3 {
+       font-size: 1.5em;
+       width: 75%;
+       margin: 0;
      }
 
      /* Footer */
@@ -591,10 +622,7 @@ input[type=button] {
      .mission-content p {
        width: 40%;
      }
-     .map figure{
-       display: flex;
-       justify-content: center;
-     }
+    
      .contact-section .content-wrapper h2 {
        font-size: 2.5em;
        width: 80%;
@@ -611,7 +639,7 @@ input[type=button] {
        font-size: .9em;
      }
      footer .content-wrapper{
-       margin: 0;
+       margin: 50px 0 0 0;
      }
      footer .copyright{
        margin:0;
@@ -620,62 +648,56 @@ input[type=button] {
       FAQ Page
       ========================================================================== */
 
-      .faq-content {
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        flex-flow: row wrap;
+    .faq-content {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      flex-flow: row wrap;
       }
-
-      .faq .faq-content {
-        margin: 0 0 100px 10px;
+    .faq .faq-content {
+      margin: 0 0 100px 0;
      }
-
      .faq .faq-question{
-       width: 40%;
+      width: 40%;
      }
-
-
    @media only screen and (min-width:1200px) {
      /*Desktop styles here*/
-
      .content-wrapper {
        max-width: 960px;
      }
-
+     header figure {
+      width: 25%;
+     }
      /* Hero */
      .hero-area h1 {
        width: 60%;
-   }
-
+     }
      /* Aside */
      aside .content-wrapper {
        justify-content: space-around;
      }
-
      aside .content-wrapper .form-description,
      aside .content-wrapper .form {
        width: 30%;
      }
-
      /* Features */
      .hero-area h1{
        font-size: 3em;
      }
-     .features article {
-       flex-basis: 33%;
-     }
-
      /* Reviews */
-     .reviews article div {
-       width: 42%;
+     .reviews p{
+       font-size: 1.25em;
      }
-
+     .reviews article div {
+       flex-basis:45%;
+     }
+     img{
+       flex-basis: : 45%;
+     }
      /* ==========================================================================
      About Page
      ========================================================================== */
 
-     .mission h2,
      .contact-section .content-wrapper h2 {
          width: 100%;
      }
@@ -706,6 +728,9 @@ input[type=button] {
        display: flex;
        justify-content: space-around;
        align-items: flex-start;
+     }
+     .map img{
+       max-height: 450px;
      }
      footer .footer-content {
        margin-top: 100px;
