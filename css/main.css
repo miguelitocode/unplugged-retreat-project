@@ -230,10 +230,19 @@ textarea {
    }
 
    footer .social-icons p {
+     background-color: #527158;
+     border-radius: 50%;
+     width: 40px;
+     height: 40px;
      display: flex;
      justify-content: center;
      align-items: center;
    }
+   footer i {
+  	font-size: 1.5em;
+    }
+
+
 
    footer .copyright {
      margin: 0;
@@ -618,7 +627,10 @@ input[type=button] {
      footer .contact {
        margin-bottom: 0;
      }
-
+     footer .social-icons {
+       width: 12.5em;
+       justify-content: space-between;
+     }
      footer .copyright {
        width: 100%;
      }
